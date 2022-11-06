@@ -3,6 +3,7 @@ import sympy
 from sympy import Symbol
 from sympy import Rational
 import matplotlib.pyplot as plt
+import csv
 
 #构造勒让德多项式，并存储在P中
 
@@ -53,3 +54,21 @@ for i in range(11):
 plt.xlim(-1, 1.5)
 plt.legend(loc='best')
 plt.show()
+
+#上面的计算得到的都是解析解，现在求数值解
+P_float = []
+epsilon_float = []
+for i in range(11):
+    P_float.append(sympy.simplify(P[i].evalf()))
+    epsilon_float.append(sympy.simplify(epsilon[i].evalf()))
+for i in range(11):
+    print(i, P_float[i], epsilon_float[i])
+#将数值解以latex公式形式给出
+latex_formula = []
+for i in range(11):
+    latex_formula.append([sympy.latex(P_float[i]), sympy.latex(epsilon_float[i])])
+
+with open('latex_formula.csv', 'w') as f:
+    write = csv.writer(f)
+    write.writerows(latex_formula)
+
