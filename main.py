@@ -53,6 +53,7 @@ for i in range(11):
     plt.plot(x_range, estimates, label = "n=" + str(i))
 plt.xlim(-1, 1.5)
 plt.legend(loc='best')
+plt.savefig("误差.svg", dpi=300,format='svg')
 plt.show()
 
 #上面的计算得到的都是解析解，现在求数值解
