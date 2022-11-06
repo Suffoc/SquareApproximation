@@ -28,7 +28,6 @@ print(norm)
 coef = []
 for i in range(11):
     coef.append(sympy.integrate(f * Lgd[i], (x, -1, 1))/ norm[i])
-
 print(coef)
 
 #由上面计算得出的系数构造最佳平方逼近多项式，以及其误差
@@ -64,12 +63,17 @@ for i in range(11):
     epsilon_float.append(sympy.simplify(epsilon[i].evalf()))
 for i in range(11):
     print(i, P_float[i], epsilon_float[i])
+
 #将数值解以latex公式形式给出
 latex_formula = []
 for i in range(11):
-    latex_formula.append([sympy.latex(P_float[i]), sympy.latex(epsilon_float[i])])
-
+    latex_formula.append([sympy.latex(P_float[i]), sympy.latex(epsilon_float[i]), sympy.latex(P[i]), sympy.latex(epsilon[i])])
 with open('latex_formula.csv', 'w') as f:
     write = csv.writer(f)
     write.writerows(latex_formula)
 
+#求极值
+for i in range(11):
+    dE = sympy.diff(epsilon, x)
+    extreme_point = sympy.solve(dE, x)
+    print(extreme_point)
