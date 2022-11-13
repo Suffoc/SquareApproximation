@@ -5,12 +5,15 @@
 ## Project Background
 
 本项目为利用勒让德多项式求解指数函数在[-1,1]上的最佳逼近多项式。
+
 This project aims to find the least square approximation of exponential function on [-1,1]
 
 在SquareApproximation.ipynb中，首先构造勒让德多项式，然后求指数函数的最佳逼近多项式，随后计算误差，最后对误差的收敛速度进行猜测，并使用最小二乘法确定系数
+
 In the file SquareApproximation.ipynb, we first construct Legendre Polynomials. Then we calculate the least square appximation polynomials of exponential function and its error. To decide the convergence speed of the approximation, we use several forms of functions to simulate it and use least square method to determine the parameter.
 
 我们最终发现对于指数函数，最佳平方逼近的收敛速度为$O((\frac{e}{n})^n)$
+
 To conclude, we find the convergence speed of the least square appximation of exponential function is $O((\frac{e}{n})^n)$
 
 ## 文件概览
