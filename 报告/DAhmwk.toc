@@ -1,0 +1,10 @@
+\contentsline {section}{\numberline {1}计算最佳平方逼近多项式}{ii}{section.1}%
+\contentsline {subsection}{\numberline {1.1}1.1}{ii}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}1.2}{ii}{subsection.1.2}%
+\contentsline {section}{\numberline {2}误差收敛性估计}{ii}{section.2}%
+\contentsline {subsection}{\numberline {2.1}以n的负数次幂收敛}{ii}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}以指数速度收敛}{ii}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}以指数的多项式速度衰减}{ii}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}最终模型}{ii}{subsection.2.4}%
+\contentsline {section}{\numberline {3}结论}{iv}{section.3}%
+\contentsline {section}{\numberline {4}}{iv}{section.4}%
