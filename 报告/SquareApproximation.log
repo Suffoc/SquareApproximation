@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.4.11)  13 NOV 2022 13:35
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.4.11)  13 NOV 2022 19:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**DAhmwk.tex
-(./DAhmwk.tex
+**SquareApproximation.tex
+(./SquareApproximation.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18>
 (/usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
@@ -558,8 +558,9 @@ Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
 \symboldsymbols=\mathgroup8
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 209.
-) (./DAhmwk.aux)
-\openout1 = `DAhmwk.aux'.
+)
+(./SquareApproximation.aux)
+\openout1 = `SquareApproximation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
@@ -581,8 +582,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
-
-ABD: EverySelectfont initializing macros
+ ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 27.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
@@ -657,9 +657,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 27.
 LaTeX Info: Redefining \pageref on input line 27.
 LaTeX Info: Redefining \nameref on input line 27.
- (./DAhmwk.out) (./DAhmwk.out)
+ (./SquareApproximation.out) (./SquareApproximation.out)
 \@outlinefile=\write3
-\openout3 = `DAhmwk.out'.
+\openout3 = `SquareApproximation.out'.
 
 
 *geometry* driver: auto-detecting
@@ -728,61 +728,32 @@ Package fontspec Info: Font family 'HeitiSCLight(0)' created for font 'Heiti
 (fontspec)             Light/BI/OT:language=dflt;"
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
 
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (./DAhmwk.toc)
-\tf@toc=\write4
-\openout4 = `DAhmwk.toc'.
+)
+File: epsilon.eps Graphic file (type eps)
+<epsilon.eps>
+ [1
 
+] [2]
+File: linear regression of logerror to n.eps Graphic file (type eps)
+<linear regression of logerror to n.eps>
 
-
-! LaTeX Error: File `err-n' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.45         \includegraphics[width=16cm]{err-n}
-                                                
-I could not locate the file with any of these extensions:
-.pdf,.PDF,.ai,.AI,.png,.PNG,.jpg,.JPG,.jpeg,.JPEG,.jp2,.JP2,.jpf,.JPF,.bmp,.BMP
-,.ps,.PS,.eps,.EPS,.mps,.MPS
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[1
-
-]
-
-! LaTeX Error: File `log(err)-n' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.55 ...  \includegraphics[width=16cm]{log(err)-n}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.PDF,.ai,.AI,.png,.PNG,.jpg,.JPG,.jpeg,.JPEG,.jp2,.JP2,.jpf,.JPF,.bmp,.BMP
-,.ps,.PS,.eps,.EPS,.mps,.MPS
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--77
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 113--115
 
  []
 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 89--92
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--130
 
  []
 
@@ -790,57 +761,27 @@ Missing character: There is no 对 (U+5BF9) in font [lmroman10-regular]:mapping=
 ex-text;!
 Missing character: There is no 于 (U+4E8E) in font [lmroman10-regular]:mapping=t
 ex-text;!
-[3]
-
-! LaTeX Error: File `regression' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.124 ... \includegraphics[width=16cm]{regression}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.PDF,.ai,.AI,.png,.PNG,.jpg,.JPG,.jpeg,.JPEG,.jp2,.JP2,.jpf,.JPF,.bmp,.BMP
-,.ps,.PS,.eps,.EPS,.mps,.MPS
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 127--133
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 165--171
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--135
+Underfull \hbox (badness 10000) in paragraph at lines 174--176
 
  []
 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.137     1
-           .$L^{\infty}$范数意义下的收敛性：对于$f(x)=e^x$，其n次勒让德逼近多项式$P_n(x)=\sum_{k=0}...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[4] (./DAhmwk.aux)
-Package rerunfilecheck Info: File `DAhmwk.out' has not changed.
-(rerunfilecheck)             Checksum: 621DAF5AEB3343AD124419E95EA52B9C;942.
+[5] [6] (./SquareApproximation.aux)
+Package rerunfilecheck Info: File `SquareApproximation.out' has not changed.
+(rerunfilecheck)             Checksum: 09F88D910443BB7F835B1FF553D8089B;657.
  ) 
 Here is how much of TeX's memory you used:
- 16221 strings out of 476919
- 326331 string characters out of 5821840
- 677079 words of memory out of 5000000
+ 16210 strings out of 476919
+ 330119 string characters out of 5821840
+ 681802 words of memory out of 5000000
  35899 multiletter control sequences out of 15000+600000
- 417067 words of font info for 110 fonts, out of 8000000 for 9000
+ 419565 words of font info for 123 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 101i,6n,104p,371b,393s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 101i,9n,104p,384b,444s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on DAhmwk.pdf (4 pages).
+Output written on SquareApproximation.pdf (6 pages).

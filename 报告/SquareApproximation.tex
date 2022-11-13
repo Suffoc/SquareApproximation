@@ -12,6 +12,8 @@
 \usepackage{listings}%插入代码
 \usepackage{float}%浮动插入内容，不会使后面的内容跑到前面去（在插入的begin后面加上H）
 \usepackage{bm}
+\usepackage{xeCJK}
+
 \setlength{\parindent}{\ccwd}
 \geometry{left=2.54cm, right=2.54cm, top=3.18cm, bottom=3.18cm}
 \linespread{1.5}
@@ -63,7 +65,7 @@
     首先我们观察勒让德多项式逼近结果的误差与多项式空间的维数n的关系:
     \begin{figure}[H]
         \centering
-        \includegraphics[width=16cm]{err-n}
+        \includegraphics{epsilon.eps}
         \caption{p1}
     \end{figure}
     从图中可看出，误差以较快的速度衰减到0.这里我们采用最小二乘法(线性回归)来拟合误差：\\
@@ -86,18 +88,14 @@
     一般情况下$k<n$，当$\{f_1,f_2,\cdots,f_n\}$不相关时，$X$为列满秩，故$X^TX$为$k+1$阶可逆矩阵.
     因此系数估计$\beta$存在.
 
-
-    \subsection{以n的负数次幂收敛}
-    即$error\sim n^{-k}$，对变量求对数得$ln(error)\sim -kln(n)$，对其进行线性回归得到
-    $\widehat{k} = $，如图所示：
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=16cm]{log(err)-n}
-        \caption{p2}
-    \end{figure}
-
     \subsection{以指数速度收敛}
     即$error\sim e^{-n}$，仅对error求对数得$ln(error)\sim n$，
+    
+    \begin{figure}[H]
+    	\centering
+    	\includegraphics[width = 16cm]{linear regression of logerror to n.eps}
+    	\caption{}
+    \end{figure}
 
     \subsection{以指数的多项式速度衰减}
     即$error\sim e^{n^{k}}$对error求两次对数得$ln(ln(error))\sim n$,
@@ -161,7 +159,7 @@
     得到结果：
     \begin{figure}[H]
         \centering
-        \includegraphics[width=16cm]{regression}
+       % \includegraphics[width=16cm]{regression}
         \caption{pn}
     \end{figure}
     $\beta_0=-2.12416299,\beta_1=0.06358719,\beta_2=-0.95127543 $，且t检验和F检验高度显著，
